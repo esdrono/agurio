@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Política de Privacidad - Agurio Constructora</title>
+    <link rel="icon" href="menu-footer/favico.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="politica-de-privacidad/politica de privacidad.css">
+    <link rel="stylesheet" type="text/css" href="menu-footer/menu.css">
+    <link rel="stylesheet" type="text/css" href="menu-footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div id="social-nav">
+            <div id="social-icons">
+                <!--<a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+                <a href="https://www.instagram.com/agurio_constructora/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/grupo.agurio"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div  id="main-nav" class="hide">
+            <a href="index.html">
+                <img src="menu-footer/Agurio - Logotipo.svg" alt="Agurio Logo" id="main-nav-logo">
+            </a>                
+            <button id="menu-toggle" class="hide-on-desktop">≡</button> <!-- Hamburger icon -->
+            <div id="main-nav-links" class="hide-on-mobile">
+                <button id="close-menu" class="hide-on-desktop">X</button>
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Servicios</a>
+                    <div class="dropdown-content">
+                        <a href="construccion.html">Construcción</a>
+                        <a href="inyección-de-polímeros.html">Inyección de Polímeros</a>
+                        <a href="impermeabilización.html">Impermeabilización</a>
+                        <a href="rapel-y-limpieza.html">Rapel y Limpieza</a>
+                    </div>
+                </div>
+                <a href="obras.html">Obras</a>
+                <a href="#contact-form">Contacto</a>
+            </div>                
+        </div>
+    </div>
+    <div id="content">
+        <div id="hero-section">
+            <div id="hero-text">
+                <h1>Soluciones rentables,<br> del cimiento al helipuerto</h1>
+                <h2>Son elecciones contundentes.</h2>
+            </div>
+        </div>
+        
+        <header>
+            <h1>Política de Privacidad</h1>
+        </header>
+    
+        <main>
+            <section>
+                <h2>1. Introducción</h2>
+                <p>En Agurio Constructora, nos tomamos en serio la privacidad de nuestros usuarios.</p>
+            </section>
+    
+            <section>
+                <h2>2. Recopilación de Datos Personales</h2>
+                <p>Recopilamos información personal de diversas maneras, incluyendo formularios en línea y cookies.</p>
+            </section>
+    
+            <section>
+                <h2>3. Uso de la Información</h2>
+                <p>Utilizamos la información recopilada para mejorar nuestros servicios y proporcionar una experiencia personalizada a nuestros usuarios.</p>
+            </section>
+    
+            <section>
+                <h2>4. Compartir Información</h2>
+                <p>No compartiremos su información personal con terceros sin su consentimiento previo.</p>
+            </section>
+    
+            <section>
+                <h2>5. Seguridad</h2>
+                <p>Tomamos medidas de seguridad para proteger la información personal de nuestros usuarios.</p>
+            </section>
+    
+            <section>
+                <h2>6. Cambios en la Política de Privacidad</h2>
+                <p>Nos reservamos el derecho de realizar cambios en esta política en cualquier momento.</p>
+            </section>
+    
+            <section>
+                <h2>7. Contacto</h2>
+                <p>Si tiene alguna pregunta o inquietud sobre nuestra política de privacidad, no dude en ponerse en contacto con nosotros.</p>
+            </section>
+        </main>
+    </div>  
+    <div id="footer">
+
+        <div id="whatsapp-button">
+            <a href="https://api.whatsapp.com/send?phone=523338087688" target="_blank">
+                <i class="fab fa-whatsapp" alt="WhatsApp"></i>
+            </a>
+        </div>
+            
+        <!-- First Section -->
+        <div class="form-section">
+            <div class="two-main-column-section">
+                <!-- Left Main Column -->
+                <div class="left-main-column">
+                    <!-- 1st subrow with 2 subcolumns -->
+                    <div class="subcolumn">
+                        <img src="menu-footer/agurio-logo-light.png" alt="Agurio Logo Light" class="logo-light">
+                    </div>
+                    <!-- 2nd subrow with 1 subcolumn -->
+                    <div class="one-sub-column-section">
+                        <p class="bottom-aligned-text">Soluciones rentables del cimiento al helipuerto.</p>
+                    </div>
+                </div>
+                <!-- Right Main Column -->
+                <div class="right-main-column">
+                    <p>Compártenos tu proyecto, seguro encontraremos una solución.</p>
+                    <form id="contact-form">
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Nombre" required>
+                        <br>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
+                        <br>
+                        <textarea id="message" name="message" class="form-input" placeholder="Mensaje" required></textarea>
+                        <br>
+                        <input type="submit" value="Enviar" class="form-button">
+                    </form>
+                    
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                    $(document).ready(function() {
+                        $("#contactForm").submit(function(event) {
+                            event.preventDefault(); // Prevent the default form submission
+                
+                            // Gather form data
+                            var formData = $(this).serialize();
+                
+                            // Send an AJAX request to the server
+                            $.ajax({
+                                type: "POST",
+                                url: "menu-footer/process.php", // Replace with the path to your server-side script
+                                data: formData,
+                                success: function(response) {
+                                    // Handle success (e.g., show a success message to the user)
+                                    alert("Message sent successfully!");
+                                },
+                                error: function() {
+                                    // Handle error (e.g., show an error message to the user)
+                                    alert("Error sending message.");
+                                }
+                            });
+                        });
+                    });
+                    </script>                
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer Section -->
+        <div class="footer">
+            <!-- First Row -->
+            <div class="footer-row legal-row">
+                <p class="legal-links"><a href="politica-de-privacidad.html"><strong>Política de Privacidad</strong></a></p>
+            </div>
+            <!-- Second Row -->
+            <div class="footer-row info-row">
+                <div class="column10">
+                    <img src="menu-footer/agurio-icon-light.png" alt="Favicon Light" class="favicon-light">
+                </div>
+                <div class="column40">
+                    <p><strong>Pintores 938. Jardines de Guadalupe. Zapopan, Jalisco</strong></p>
+                </div>
+                <div class="column20">
+                    <p><strong>+52 33 3808 7688 | ventas@agurio.com</strong></p>
+                </div>
+                <div class="column30">
+                    <p><strong>Todos los derechos reservados Agurio Constructora®</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="menu-footer/main.js"></script>    
+</body>
+</html>
