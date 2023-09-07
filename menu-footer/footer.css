@@ -1,0 +1,246 @@
+/* Fonts */
+@font-face {
+    font-family: 'Metropolis Bold';
+    src: url('Metropolis-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Metropolis SemiBold';
+    src: url('Metropolis-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'Metropolis-Regular';
+    src: url('Metropolis-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Metropolis-Light';
+    src: url('Metropolis-Light.otf');
+}
+
+@font-face {
+    font-family: 'Metropolis-Thin';
+    src: url('Metropolis-Thin.otf');
+}
+
+#whatsapp-button-i {
+    color: white; /* Set the color to white */
+}
+
+#whatsapp-button {
+    font-size: 30px; /* Adjust the font size to make the icon bigger */
+    color: white; /* Set the color to white */
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-color: green; /* Adjust the background color as needed */
+    border-radius: 50%; /* Make it round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+    z-index: 1; /* Ensure it appears above other content */
+}
+
+/* Responsive design for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  #whatsapp-button {
+    font-size: 70px; /* Adjust the font size to make the icon bigger */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    }
+}
+
+/* Contact Form */
+.form-section {
+    width: 90%;
+    margin: 15vh auto 10vh;
+    font-family: 'Metropolis-Light', sans-serif;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+}
+
+.form-input {
+    text-transform: uppercase;
+    font-size: 2vh;
+    width: 100%;
+    margin: 7vh 0;
+    padding-bottom: 1vh;
+    border-bottom: 0.4vh solid #999;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+/* Main Section styles */
+.two-main-column-section {
+    display: flex;
+}
+
+.left-main-column {
+    margin-right: 2vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-main-column {
+    margin-left: 2vw;
+    width: 50%;
+    color: #B9ADA8;
+    text-align: right;
+}
+
+.right-main-column p {
+    text-align: left;
+    padding-right: 10vw;
+}
+
+.one-sub-column-section p.bottom-aligned-text {
+    text-align: right;
+    font-size: 3.3vh;
+    font-family: 'Metropolis SemiBold', sans-serif;
+    color: #B9ADA8
+}
+
+.subcolumn {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-light {
+    padding: 3vh 0;
+    width: 70%;
+}
+
+.form-button {
+    border-radius: 1.5vh;
+    background-color: #E19D2C;
+    color: #ffffff;
+    border: none;
+    padding: 2vh 2vw;
+    cursor: pointer;
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-family: 'Metropolis-Regular', sans-serif;
+    text-align: right;
+}
+
+/* Responsive design for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .form-section {
+        text-align: center;
+        font-size: 2vh;
+    }
+
+    .logo-light {
+        width: 70%;
+    }    
+
+    /* Main section becomes a single column */
+    .two-main-column-section {
+        flex-direction: column;
+    }
+
+    .left-main-column, .right-main-column {
+        width: 100%;
+    }
+
+    .right-main-column p {
+        text-align: center;
+    }
+
+    .subcolumn {
+        width: 100%;
+    }
+
+    .one-sub-column-section p.bottom-aligned-text {
+        text-align: center;
+        font-size: 2vh;
+    }
+
+    #contact-form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .form-button {
+        font-size: 2vh;
+        padding: 2vh 7vw;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f5f5f5; /* Light grey background */
+    
+}
+
+.footer-row {
+    display: flex;
+    border-bottom: 3px solid #B9ADA8; /* Darker grey borderline */
+    font-size: 1.4vh;
+    color: #B9ADA8;
+    font-family: 'Metropolis-Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+.legal-row {
+    justify-content: flex-end; /* Align links to the right */
+    margin: 0 1vw;
+}
+
+.legal-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.info-row {
+    padding: 1vh 1vw;
+}
+ 
+
+.column10 {
+    width: 5%;
+    margin: 1vh 0;
+}
+
+.column40 {
+    width: 50%;
+    margin: 0 2vw;
+}
+
+.column20 {
+    width: 30%;
+}
+
+.column30 {
+    width: 40%;
+    color:#000;
+}
+
+/* Responsive design for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .legal-row {
+        justify-content: center; /* Align links to the center */
+    }
+
+    .column10, .column40, .column20, .column30 {
+        width: 100%;
+    }
+
+    .favicon-light {
+        display: block;
+        margin: auto;
+    }
+}

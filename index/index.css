@@ -1,0 +1,359 @@
+/* Fonts */
+@font-face {
+    font-family: 'Metropolis Bold';
+    src: url('menu-footer/Metropolis-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Metropolis SemiBold';
+    src: url('menu-footer/Metropolis-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'Metropolis-Regular';
+    src: url('menu-footer/Metropolis-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Metropolis-Light';
+    src: url('menu-footer/Metropolis-Light.otf');
+}
+
+@font-face {
+    font-family: 'Metropolis-Thin';
+    src: url('menu-footer/Metropolis-Thin.otf');
+}
+
+/* Layout */
+body {
+  overflow-x: hidden; /* Hide horizontal overflow */
+  margin: 0;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+a {
+    text-decoration: inherit; /* Removes underline */
+    color: inherit;
+}
+
+/* Hero section */
+#hero-section {
+    background-image: url('homebg1.jpg');
+    height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+#hero-section h1 {
+    padding: 25vh 0 10vh;
+    font-size: 5vh;
+    font-family: 'Metropolis-Thin', sans-serif; /* Use the new 'Metropolis Bold' font, with a fallback to any sans-serif font */
+    font-weight: 300; /* Adjust this value as needed */
+}
+
+#hero-section h2 {
+    font-size: 5vh;
+    font-family: 'Metropolis Bold', sans-serif; /* Use the new 'Metropolis Bold' font, with a fallback to any sans-serif font */
+}
+
+@media (max-width: 768px) {
+
+    #hero-section {
+        height: 60vh;
+    }
+    
+    #hero-section h1 {
+        font-size: 3vh;
+    }
+    #hero-section h2 {
+        font-size: 3vh;
+    }
+}
+/* About us */
+#about-us {
+    margin: 15vh 28vw;
+    font-size: 2.6vh;
+    text-align: center;
+    font-family: 'Metropolis-Light', sans-serif;
+}
+
+@media (max-width: 768px) {
+    #about-us {
+        font-size: 2.3vh;
+        margin: 7vh 5vw;
+    }
+}
+
+/* Construction services */
+.construction-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.construction-service {
+    font-family: 'Metropolis SemiBold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.15vh;
+    margin: 4.5vh 2.45vw;
+    width: 20%;
+}
+
+.construction-service-title {
+    border-bottom: 13px solid; /* default border color */
+}
+
+.border-residencial {
+    border-color: #B9ADA8;
+}
+
+.border-vertical {
+    border-color: #B9ADA8; 
+}
+
+.border-industrial {
+    border-color: #CEC5B7; 
+}
+
+.border-comercial {
+    border-color: #E5E0D8; 
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .construction-services {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .construction-service {
+      width: 90%;
+      margin: 0.5vh 0; /* Adjust as needed */
+      font-size: 1.8vh;
+    }
+  }
+
+/* Services */
+.services-intro h2{
+    font-family: 'Metropolis-Thin', sans-serif;
+    font-size: 4.5vh;
+    margin-top: 7.3vh;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.services-intro p {
+    font-family: 'Metropolis-Regular', sans-serif;
+    font-size: 2.4vh;
+    margin: 7vh 18vw;
+    text-align: center;
+}
+
+#services-section {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    font-family: 'Metropolis SemiBold', sans-serif;
+    width: 93%;
+    margin: 0 auto;
+}
+
+.service {
+    flex: 1 1 25%;
+}
+
+.service-title {
+    text-transform: uppercase;
+    padding: 1.3vh;
+    font-size: 2.7vh;
+    display: flex; /* Center the text vertically */
+    height: 10vh;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.service-image {
+    position: relative;
+    height: 87vh;
+}
+
+.service-image .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-image .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-image:hover .overlay {
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .services-intro h2{
+        font-size: 3.1vh;
+        margin: 7vh 4vw;
+    }
+
+    .services-intro p {
+        margin: 0 3vw 5vh;
+        font-size: 2.1vh;
+    }
+
+    .service {
+        margin: 2vh 0;
+    }
+
+    .service-title {
+        font-size: 2.5vh;
+        height: 5vh;
+    }
+
+    .service-image {
+        height: 50vh;
+    }
+}
+
+/* Obras */
+.obras-intro {
+    font-family: 'Metropolis-Thin', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 16vh 0 6vh;
+}
+
+.project-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow the projects to wrap onto the next line if the screen is too narrow */
+    justify-content: center;
+}
+
+.project {
+    position: relative;
+    width: 29%;
+    margin: 0.6vw; /* Add some space between the projects */
+}
+
+.project img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0; /* This will position the overlay at the top */
+    left: 0;
+    right: 0;
+    background: #B9ADA8; /* This sets the grey background without transparency */
+    color: #fff;
+    text-align: center;
+    font-size: 2.3vh;
+    text-transform: uppercase;
+    font-family: 'Metropolis Bold', sans-serif;
+}
+  
+#button-section {
+  display: flex;
+  justify-content: center;
+
+}
+
+.custom-button {
+  border-radius: 2vh;
+  background-color: #E19D2C;
+  color: #ffffff;
+  border: none;
+  padding: 2.5vh 2.5vw;
+  cursor: pointer;
+  font-size: 3vh;
+  margin: 5.5vh 0 13vh;
+  text-transform: uppercase;
+  font-family: 'Metropolis-Regular', sans-serif;
+}
+
+.custom-button:hover {
+  background-color: #c88226;
+}
+
+/* Adjust the project layout for screens narrower than 768px */
+@media screen and (max-width: 768px) {
+    .obras-intro {
+        font-size: 2vh;
+    }
+
+    .project {
+        width: 90%; /* Make the projects full width on very small screens */
+        margin: 1vh 0;
+    }
+
+    .project-overlay {
+        font-size: 1.8vh;
+    }
+
+    .custom-button {
+        font-size: 2.3vh;
+        padding: 2.5vh 12vw;
+        margin: 5.5vh 0 11vh;
+
+    }
+}
+
+/* Carousel */
+.gracias {
+    text-transform: uppercase;
+    font-family: 'Metropolis-Thin', sans-serif;
+    font-size: 3vh;
+    text-align: center; /* Center the text horizontally */
+}
+
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel {
+    animation: scrolling 50s linear infinite;
+    width: calc(255px * 34); /* 110px is the total width including margin (100px width + 10px margin), and 34 is the total number of images including clones */
+}
+
+.carousel img {
+    width: 200px;
+    height: 200px;
+    margin: 0 2vw;
+}
+@keyframes scrolling {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Adjust the project layout for screens narrower than 768px */
+    @media screen and (max-width: 768px) {
+    .gracias {
+        font-size: 2vh;
+        margin: 0 3vw;
+    }
+
+    .carousel {
+        margin: 10vh 0 20vh;
+      }
+    } 

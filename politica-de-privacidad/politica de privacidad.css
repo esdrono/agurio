@@ -1,0 +1,53 @@
+/* Fonts */
+@font-face {
+    font-family: 'Metropolis-Light';
+    src: url('menu-footer/Metropolis-Light.otf');
+}
+
+/* Layout */
+body {
+  margin: 0;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  font-family: 'Metropolis-Thin', sans-serif; /* Use the new 'Metropolis Bold' font, with a fallback to any sans-serif font */
+  text-align: center;
+}
+
+/* Hero section */
+#hero-section {
+    background-image: url('homebg1.jpg');
+    height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+#hero-section h1 {
+    padding: 25vh 0 10vh;
+    font-size: 5vh;
+    font-family: 'Metropolis-Thin', sans-serif; /* Use the new 'Metropolis Bold' font, with a fallback to any sans-serif font */
+    font-weight: 300; /* Adjust this value as needed */
+}
+
+#hero-section h2 {
+    font-size: 5vh;
+    font-family: 'Metropolis Bold', sans-serif; /* Use the new 'Metropolis Bold' font, with a fallback to any sans-serif font */
+}
+
+@media (max-width: 768px) {
+
+    #hero-section {
+        height: 60vh;
+    }
+    
+    #hero-section h1 {
+        font-size: 3vh;
+    }
+    #hero-section h2 {
+        font-size: 3vh;
+    }
+}

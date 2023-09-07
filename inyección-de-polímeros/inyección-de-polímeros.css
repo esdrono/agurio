@@ -1,0 +1,160 @@
+/* Fonts */
+@font-face {
+    font-family: 'Metropolis SemiBold';
+    src: url('menu-footer/Metropolis-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'Metropolis-Regular';
+    src: url('menu-footer/Metropolis-Regular.otf');
+}
+
+/* Layout */
+body {
+    overflow-x: hidden; /* Hide horizontal overflow */
+    margin: 0;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+  }
+
+/* Hero section */
+#hero-section {
+    background-image: linear-gradient(rgba(208, 95, 43, 0.2), rgba(208, 95, 43, 0.2)), url('serviciobg2.jpg');
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#hero-section h1 {
+    text-align: center;
+    padding: 0 20vw;
+    font-size: 8vh;
+    font-family: 'Metropolis-Regular', sans-serif;
+    letter-spacing: 0.2em;
+}
+
+@media (max-width: 768px) {
+
+    #hero-section {
+        height: 55vh;
+    }
+    
+    #hero-section h1 {
+        padding: 0;
+        font-size: 3.5vh;
+        letter-spacing: 0.3em;
+}
+}
+
+.gradient-section-1 {
+
+    height: 10vh;
+    background: linear-gradient(155deg, transparent 33%, #D05F2B 33%);
+    margin-top: -10vh; /* Added to pull the gradient section up */
+}
+
+.gradient-section {
+    font-size: 2.3vh;
+    padding: 3vh 29vw;
+    text-align: center;
+    background-color: #D05F2B;
+    color: #FFF;
+    font-family: 'Metropolis-Regular', sans-serif;
+}
+
+.gradient-section-2 {
+    height: 10vh;
+    background: linear-gradient(210deg, #D05F2B 35%, transparent 5%);
+}
+
+@media (max-width: 768px) {
+    .gradient-section-1 {
+        height: 5vh;
+    }
+    
+    .gradient-section {
+        font-size: 2vh;
+        padding: 0.1vh 2vw;
+    }
+    
+    .gradient-section-2 {
+        height: 7vh;
+    }
+}
+
+#services-section {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    font-family: 'Metropolis SemiBold', sans-serif;
+    width: 93%;
+    margin: 15vh auto;
+}
+
+.service {
+    flex: 1 1 25%;
+}
+
+.service:hover {
+    transition: transform 1s ease; /* Adding transition for smooth scaling */
+    transform: scale(1.05); /* Scaling on hover */
+    z-index: 1;
+    box-shadow: 0 1vh 2vw rgba(0, 0, 0, 0.5); /* Dark shadow on hover */
+}
+
+.service-title {
+    text-transform: uppercase;
+    font-size: 2.2vh;
+    display: flex; /* Center the text vertically */
+    height: 8vh;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+}
+
+.service-image {
+    height: 83vh;
+    position: relative;
+}
+
+.service-image .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-image .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-image:hover .overlay {
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+
+    #services-section {
+        margin: 15vh auto 22vh;
+    }
+
+    .service {
+        margin: 2vh 0;    
+        flex: 1 1 80%;
+    }
+
+    .service-title {
+        font-size: 1.9vh;
+        height: 7vh;
+    }
+
+    .service-image {
+        height: 50vh;
+    }
+}
